@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './component/navbar';
 import Sidebar from './component/Sidebar';
 import Profile from './component/profile'
-import TableKar from './component/tableKar';
-import TableSis from './component/tableSis';
-import TableGur from './component/tableGur';
+import TableKar from './component/tableKarUser';
+import TableSis from './component/tableSisUser';
+import TableGur from './component/tableGurUser';
 import Home from './component/Home';
 import WebFont from 'webfontloader';
 
-const App = () => {
+const AppUser = () => {
 
   //Font
   useEffect(() =>{
@@ -70,7 +70,7 @@ const App = () => {
       <Sidebar onClick={sideClick} open={openSide} onTabKarClick={tabKarClick} onTabSisClick={tabSisClick} 
       onTabGurClick={tabGurClick} onTabGur={tabGur} onTabKar={tabKar} onTabSis={tabSis} onHomeClick={homeClick} onHome={home}/>
       <Profile open={openProf}/>
-      <Home open={home}  onTabKar={tabKarClick} onTabGur={tabGurClick} onTabSis={tabSisClick}/>
+      <Home open={home} onTabKar={tabKarClick} onTabGur={tabGurClick} onTabSis={tabSisClick}/>
       <div className='mt-32'>
       <TableKar open={tabKar}/>
       <TableSis open={tabSis}/>
@@ -80,4 +80,4 @@ const App = () => {
    );
 }
  
-export default App;
+export default AppUser;

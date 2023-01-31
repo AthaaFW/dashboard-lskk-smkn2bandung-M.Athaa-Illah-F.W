@@ -4,9 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        blueMain: '#2857a9',
+        blueMain: '#0084ff',
         blueSec : '#0084ff',
         whiteSnow: '#fff9f9',
+        blackTrans:'rgba(0, 0, 0, 0.7)',
       },
     },
   },

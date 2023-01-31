@@ -2,7 +2,7 @@ import {ImExit} from 'react-icons/im';
 
 const Profile = ({open}) => {
     return ( 
-        <div className={open?"absolute text-black top-16 right-0":"hidden"}>
+        <div className={open?" text-black top-16 right-0 bg-white z-10 fixed":"hidden"}>
             <ul className="flex flex-col justify-center items-center  shadow-md space-y-3">
                 <li className="pr-5 pl-5 pt-2  hover:text-gray-400"><a href="#">Profile</a></li>
                 <li className="pr-5 pl-5 hover:text-gray-400"><a href="#">Setting</a></li>

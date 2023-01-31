@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.card{
+  background: url("./asset/1328841.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card2{
+  background: url("./asset/wallpaperflare.com_wallpaper\ \(1\).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card3{
+  background: url("./asset/wallpaperflare.com_wallpaper\ \(2\).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+textarea{
+  resize: none;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -9,6 +43,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("./asset/low-poly-grid-haikei.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 code {
@@ -18,30 +55,36 @@ code {
 
 .sidebar{
   width: 12rem;
-  height: 100vh;
   color: #0084ff;
-  background-color: white;
-  box-shadow: 1px 1px 10px 1px  rgba(0, 0, 0, 0.192);
+  box-shadow: 1px 1px 10px 1px  rgba(0, 0, 0, 0.192); 
   top: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
   transform: translateX(-100%);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
 }
 
 .close{
-  transform: translateX(0%);
-  background-color: white;
+  transform: translateX(0%);  
+  position: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.2s ease-in-out;
 }
 
 .sidebar ul li{
   padding: 15px;
+  transition: all 0.2s ease-in-out;
 }
 
+
+
+
 .sidebar .active{
-  display: block;
+  transition: all 0.2s ease-in-out;
+  border-radius: 40px;
   background-color: #0084ff;
   color: white;
 }
@@ -49,4 +92,19 @@ code {
 .profile{
   width: 40px;
   height: 40px;
+}
+
+#Form{
+  background: url("./asset/polygon-scatter-haikei\ \(1\).svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.font-manrope{
+  font-family: 'Manrope';
+}
+
+
+.bubble{
+  transition: all 0.3s ease-in-out;
 }
